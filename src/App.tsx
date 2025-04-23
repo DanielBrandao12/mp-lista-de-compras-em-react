@@ -66,7 +66,7 @@ const App: React.FC = () => {
             className="block w-full px-3 py-2 border rounded-lg border-slate-300 text-slate-700"
           />
           {errorItem && (
-            <span className="absolute top-[42%] right-[57%] text-[11px] text-red-500">
+            <span className="absolute top-[54%] md:top-[42%] right-[69%] md:right-[57%] text-[9px] md:text-[11px] text-red-500">
               Não pode estar vazio
             </span>
           )}
@@ -85,9 +85,10 @@ const App: React.FC = () => {
           />
         </div>
         {errorQtde && (
-          <span className="absolute top-[42%] right-[39%] text-[11px] text-red-500">
-            Número precisa ser maior que zero
-          </span>
+         <span className="absolute top-[54%] md:top-[42%] right-[19%] md:right-[39%] text-[9px] md:text-[11px] text-red-500">
+         Número precisa ser maior que zero
+       </span>
+       
         )}
         <button
           type="submit"
